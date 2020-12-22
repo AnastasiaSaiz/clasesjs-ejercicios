@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Rectangulo {
+            constructos(base, altura) {
+                this.base = base
+                this.altura = altura
+            }
+            calcularArea() {
+                let area = this.base * this.altura
+                console.log(area);
+            }
+            calcularPerimetro() {
+                let perimetro = this.base * 2 + this.altura * 2
+                console.log(perimetro)
+            }
+        }
+        const rectangulo = new Rectangulo(4, 7)
+        rectangulo.altura = 5
+        rectangulo.calcularArea();
+        rectangulo.calcularPerimetro();
+    </script>
+</body>
+
+</html>

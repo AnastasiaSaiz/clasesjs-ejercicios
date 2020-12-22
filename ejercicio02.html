@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Distancia {
+            constructor(num) {
+                this.num = num
+            }
+            millasAMetros() {
+                const metro = 1609.34
+                let metros = this.num * metro
+                console.log(metros)
+
+            }
+            millasAKm() {
+                const metro = 1609.34
+                let km = metro / 1000
+                km = this.num * km
+                console.log(km)
+            }
+        }
+
+        let numero = new Distancia(20);
+        numero.millasAMetros();
+        numero.millasAKm();
+    </script>
+</body>
+
+</html>
